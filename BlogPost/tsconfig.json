@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "commonjs",
+      "rootDir": "./src",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "paths": {
+      "@api/*": ["src/api/*"],
+      "@cache/*": ["src/cache/*"],
+      "@config/*": ["src/config/*"],
+      "@core/*": ["src/core/*"],
+      "@database/*": ["src/database/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@service/*": ["src/service/*"],
+      "@type/*": ["src/type/*"],
+      "@util/*": ["src/util/*"],
+      "*": ["node_modules/*"]
+      }
+    },
+    "include": ["src/*.ts", "src/api/routes/blog.routes.ts", "src/database/data-source.ts"],
+  }
+  
